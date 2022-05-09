@@ -1,0 +1,28 @@
+GitHub. HW_2
+
+1. На локальном репозитории сделать ветки для:
+- Postman   ---   git branch Postman
+- Jmeter   ---   git branch Jmeter
+- CheckLists   ---   git branch CheckLists
+- Bag Reports   ---   git branch Bag_Report
+- SQL   ---   git branch SQL
+- Charles   ---   git branch Charles
+- Mobile testing   ---   git branch Mobile_testing
+
+2. Запушить все ветки на внешний репозиторий   ---   git push --all
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта   ---   git checkout Bag_Reports,
+vim BagReport_ID_123 (пишем наш баг репорт и сохраняем).
+4. Запушить структуру багрепорта на внешний репозиторий   ---   git add BagReport_1.txt, git commit -m "Creat BagReport_1.txt",
+git push --set-upstream origin Bag_Reports
+5. Вмержить ветку Bag Reports в Main   ---   заходим на главную ветку - git branch main , после чего мержим
+ветку в main - git merge Bag_Reports
+6. Запушить main на внешний репозиторий.   ---   git push
+7. В ветке CheckLists набросать структуру чек листа.   ---   git checkout CheckLists, vim Check_list_1.txt
+(пишем наш чеклист и сохраняем).
+8. Запушить структуру на внешний репозиторий.   ---   git add Check_list_1.txt, git commit -m "Creat Check_list_1.txt",
+git push --set-upstream origin CheckLists
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main.   ---   На веб странице в нашем репозитории нажимаем
+"Pull requests", нажимаем "New pull requests", выбираем в "compare" "CheckLists", оставляем комментарий к реквесту и наживаем
+"Create pull request". После чего мержим реквест и подтверждаем наш коммит.
+10. Синхронизировать Внешнюю и Локальную ветки Main.   ---   Заходим в главную локальную ветку - git checkout main, после чего
+вводим команды git fetch и git pull. Теперь в нашей локальной папке появился файл Check_list_1.txt.
